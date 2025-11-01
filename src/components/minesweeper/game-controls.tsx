@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { BombIcon } from "../icons/bomb-icon";
-import { Clock, Frown, Smile, Sunglasses } from "lucide-react";
+import { Clock, Frown, Smile, Glasses } from "lucide-react";
 import type { GameStatus } from "@/lib/minesweeper";
 
 interface GameControlsProps {
@@ -33,7 +33,7 @@ export function GameControls({
       case "playing":
         return <Smile className="w-8 h-8 text-yellow-400" />;
       case "won":
-        return <Sunglasses className="w-8 h-8 text-green-400" />;
+        return <Glasses className="w-8 h-8 text-green-400" />;
       case "lost":
         return <Frown className="w-8 h-8 text-red-500" />;
       case "ready":
